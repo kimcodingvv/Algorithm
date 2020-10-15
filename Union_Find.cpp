@@ -6,7 +6,7 @@ struct UF {
 		FOR(i, 0, n) arr[i] = i, sz[i] = 1;
 	}
 	int find(int x) {
-		return (arr[x] == x) ? x : x = find(arr[x]);
+		return (arr[x] == x) ? x : arr[x] = find(arr[x]);
 	}
 	void merge(int a, int b) {
 		a = find(a), b = find(b);
