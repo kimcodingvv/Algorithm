@@ -1,3 +1,4 @@
+vector <vector <int>> adj(n + 1);
 vector <int> dfsn(n + 1), finish(n + 1), cpn(n + 1);
 stack <int> st;
 int cnt = 1, scc_cnt = 1;
